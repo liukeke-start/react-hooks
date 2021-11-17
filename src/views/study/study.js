@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './index.css';
 
-function App() {
+function Study() {
   return (
     <div className="App">
       我是新的内容呀
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default Study;
