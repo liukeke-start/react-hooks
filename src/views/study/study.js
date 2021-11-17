@@ -4,7 +4,7 @@ import './index.css';
 function Study() {
   return (
     <div className="App">
-      我是新的内容呀
+      我是新的内容呀1111111
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
