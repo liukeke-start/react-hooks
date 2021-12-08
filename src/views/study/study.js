@@ -1,26 +1,19 @@
-// import logo from './logo.svg';
-import './index.css';
+import React, { useState } from 'react';
+import style from './index.css';
 
-function Study() {
+
+const Study = () => {
+  const [ but, setBut ]  = useState('点击我');
+
+  function handleClick () {
+    return setBut('我是被点击之后的内容');
+  }
+  
   return (
-    <div className="App">
-      我是新的内容呀1111111
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+    <div onClick = { handleClick } >
+      {but}
+      <div className={style.title}>我是头部的内容<h2>sdfsdfsdfsd</h2></div>
     </div>
-  );
+  )
 }
-
 export default Study;
