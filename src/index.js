@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Study from '@/views/study/study';
+import Routerlist from '@/router';
+import Banner from '@/components/banner/banner';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Study />
+    <Banner />
+    <Routerlist />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import style from './index.css';
-import Banner from '../banner/banner';
+
 
 
 const Study = () => {
@@ -14,7 +14,6 @@ const Study = () => {
     <div onClick = { handleClick } >
       {but}
       <div className={style.title}>我是头部的内容<h2>sdfsdfsdfsd</h2></div>
-      <Banner />
     </div>
   )
 }

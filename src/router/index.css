@@ -1,0 +1,12 @@
+.header ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+  margin-top: 10px;
+}
+.header li {
+  text-align: center;
+}
+.header li .active {
+  color: #f5641d;
+}
