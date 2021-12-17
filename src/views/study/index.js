@@ -9,20 +9,34 @@ const params = {
   limit: '30'
 }
 
- function Study() {
+function Study() {
 
-  const [data, setData] = useState();
+  const [datas, setDatas] = useState({
+    data: [],
+  });
 
   useEffect(() => {
     // params 一定要定义值传的参数
-    getRequest(params).then((res) => {
-      console.log(res)
-    })
+    // const result = async () => {
+    //   getRequest(params).then((res) => { 
+    //     setDatas(result.datas);
+    //     return res.data; 
+    //   });
+    // }
+    // result();
+
+    // console.log()
+    
   },[]);
   
   return (
-
+    
     <div className={style.studyBox}>
+      {
+        // datas.data.map((item,i) => {
+
+        // })
+      }
       <div className={style.studyCon}>
        <a href="#">
           <div className={style.pic}>
