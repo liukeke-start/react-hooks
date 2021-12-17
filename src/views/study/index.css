@@ -1,6 +1,33 @@
-.title {
-  color: red;
+.studyBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
 }
-.title  h2 {
-  color: black;
+.studyCon a {
+  display: block;
+  margin-bottom: 10px;
+}
+.studyCon .pic {
+  position: relative;
+}
+.studyCon .pic img {
+  width: 100%;
+}
+.studyCon .tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.studyCon .tags span {
+  font-size: 14px;
+}
+.studyCon .tags span:last-child {
+  text-align: right;
+}
+.studyCon .type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  color: #fff;
+  background-color: #f27537;
 }
