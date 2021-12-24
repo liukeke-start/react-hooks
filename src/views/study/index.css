@@ -1,3 +1,14 @@
+.title {
+  margin: 3% 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.title span:nth-child(2) {
+  text-align: right;
+}
+
+
 .studyBox {
   margin: 2%;
   display: grid;
@@ -32,3 +43,66 @@
   color: #fff;
   background-color: #f27537;
 }
+
+.modalbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+}
+
+.modalContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-radius: .25rem .25rem 0 0;
+}
+.modalContent h3 {
+  position: relative;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-bottom: 1px solid #e8e8e8;
+}
+.modalContent h3 i {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  overflow: hidden;
+  color: #595959;
+  font-size: 20px;
+}
+
+.modalList {
+  padding-bottom: 30px;
+}
+.modalList h5 {
+  padding: 10px;
+  color: #8c8c8c;
+  font-size: 16px;
+}
+
+.modalList ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  padding: 0 10px;
+ }
+ .modalList li {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #262626;
+  background-color: #f7f7f7;
+ }
